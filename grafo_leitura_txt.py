@@ -33,6 +33,11 @@ def imprimir_grafo(grafo):
     for vertice, vizinhos in grafo.items(): 
         print(f"{vertice} -> {','.join(vizinhos)}")
 
+def listar_arestas(grafo):
+    print("Arestas:")
+    for u, vizinhos in grafo.items():
+        for v in vizinhos:
+            print(f"{u} -> {v}")
 
 
 #função para plotar o grafo
@@ -67,5 +72,6 @@ if __name__ == "__main__":
     grafo = construir_lista_adjacencia(arestas, dirigido)
 
     imprimir_grafo(grafo)
+
 
     plotar_grafo(grafo, dirigido)

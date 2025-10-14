@@ -4,20 +4,20 @@
   <img width="900" height="500" alt="image" src="Rede_de_Comunicação.png"/>
 </p>
 
-## 👥 Integrantes
+## 1-👥 Integrantes
 - **ANTÔNIO FELIPE COSTA DE FREITAS**
 - **JOÃO VITOR DE ALMEIDA SILVA** 
 
 
 
-## 📋 Descrição do Projeto
+## 2-📋 Descrição do Projeto
 Este projeto foi desenvolvido para a disciplina **ESTRUTURA DE DADOS AVANÇADA - UNIVERSIDADE ESTADUAL DO MARANHÃO**.  
 O objetivo é **analisar redes de comunicação** representadas por grafos não-dirigidos, permitindo verificar conexões entre roteadores e identificar **pontos críticos (vértices de articulação)** cuja falha pode desconectar partes da rede.
 
 O projeto utiliza uma **lista de adjacência** como estrutura de dados principal, oferecendo operações básicas de manipulação de grafos e **visualização gráfica** com a biblioteca `NetworkX`.
 
 
-## ⚙️ Funcionalidades Implementadas
+## 3-⚙️ Funcionalidades Implementadas
 - Leitura de um grafo a partir de um arquivo `.txt`
 - Construção de **lista de adjacência**
 - Impressão da estrutura do grafo
@@ -28,7 +28,7 @@ O projeto utiliza uma **lista de adjacência** como estrutura de dados principal
 - **Plotagem visual** do grafo com `NetworkX` e `Matplotlib`
 
 
-## 🧩 Estrutura do Projeto
+## 4-🧩 Estrutura do Projeto
 ```text
 Analisador de Pontos Criticos
 
@@ -63,11 +63,11 @@ A primeira linha indica o **tipo do grafo**:
 - As linhas seguintes representam as **arestas** (conexões entre os vértices).
 
 
-## ▶️ Como Executar o Projeto
+## 5-▶️ Como Executar o Projeto
 
 ###
 
-## 🖼️ Visualização
+## 6-🖼️ Visualização
 O programa gera uma visualização da rede mostrando:
 - **Nós**: roteadores, switches e PCs.
 - **Arestas**: conexões entre eles.  

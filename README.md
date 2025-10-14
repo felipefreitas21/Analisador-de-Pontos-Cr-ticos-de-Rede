@@ -37,7 +37,7 @@ Analisador de Pontos Criticos
 ─ README.md     # Este arquivo
 ```
 
-## 📄 Exemplo de Arquivo de Entrada (`grafo 1.txt`)
+## 5-📄 Exemplo de Arquivo de Entrada (`grafo 1.txt`)
 ```text
 ND
 S1 PC0
@@ -63,11 +63,11 @@ A primeira linha indica o **tipo do grafo**:
 - As linhas seguintes representam as **arestas** (conexões entre os vértices).
 
 
-## 5-▶️ Como Executar o Projeto
+## 6-▶️ Como Executar o Projeto
 
 ###
 
-## 6-🖼️ Visualização
+## 7-🖼️ Visualização
 O programa gera uma visualização da rede mostrando:
 - **Nós**: roteadores, switches e PCs.
 - **Arestas**: conexões entre eles.  
@@ -75,5 +75,5 @@ O programa gera uma visualização da rede mostrando:
 
 
 
-## 📚 Referências
+## 8-📚 Referências
 -

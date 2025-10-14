@@ -64,15 +64,40 @@ A primeira linha indica o **tipo do grafo**:
 
 
 ## 6-▶️ Como Executar o Projeto
+O arquivo compactado enviado contém os seguintes itens:
+-README.md → Este arquivo de instruções.
+-grafo 1.txt → Arquivo de entrada contendo o grafo a ser lido e processado.
+-grafo.py → Codigo com todas as funções basicas e o algoritimo principal de identificação de pontos criticos de uma rede de comunicação
+-main.py → Contem o menu principal e todas as chamadas das funções que estao no grafo.py
+-main.exe → Versão executável do programa para Windows.
 
-###
+Para garantir o funcionamento correto do programa:
+6.1- Extraia todos os arquivos do .zip.
+6.2- Coloque todos os arquivos na mesma pasta — isso fará que localize corretamente os arquivos .py e o arquivo de grafo (grafo 1.txt).
+executando o projeto
+
+🪟 Método 1 — Via executável (recomendado)
+```text
+-Localize o arquivo main.exe.
+-Clique com o botão direito sobre ele.
+-Selecione “Executar como administrador”.
+-O programa será iniciado e fará uso automático dos arquivos da pasta.
+```
+🪟 Método 2 — Via código-fonte (opcional)
+Caso prefira rodar o código em Python:
+```text
+É necessário ter o Python 3.10+ instalado em seu sistema.
+```
+
+Sobre o arquivo 'grafo 1.txt':
+Esse arquivo contém os dados que representam o grafo usado pelo programa, você pode editar o conteúdo dele a partir de um bloco de notas ou a partir de qualquer programa que abra um arquivo txt.
+💡 Observação: É importante executar como administrador para evitar possíveis restrições de acesso a arquivos ou diretórios.
 
 ## 7-🖼️ Visualização
 O programa gera uma visualização da rede mostrando:
 - **Nós**: roteadores, switches e PCs.
 - **Arestas**: conexões entre eles.  
 - O grafo é desenhado automaticamente em uma janela interativa.
-
 
 
 ## 8-📚 Referências

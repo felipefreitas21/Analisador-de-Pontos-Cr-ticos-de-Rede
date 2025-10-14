@@ -1,4 +1,4 @@
-# Analisador-de-Pontos-Cr-ticos-de-Rede
+# Analisado -de Pontos Críticos de Redes de Comunicação
 Sistema em Python que visa identificar os pontos críticos de uma rede de comunicação.
 🧠 Analisador de Pontos Críticos em Redes de Comunicação
 

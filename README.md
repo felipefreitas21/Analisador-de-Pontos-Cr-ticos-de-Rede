@@ -86,9 +86,9 @@ executando o projeto
 🪟 Método 2 — Via código-fonte (opcional)
 Caso prefira rodar o código em Python:
 ```text
-É necessário ter o Python 3.10+ instalado em seu sistema.
-clique com o botão direito na pasta e escolha a opção “Abrir no Terminal”
-Execute o programa com o comando: 'python main.py'
+-É necessário ter o Python 3.10+ instalado em seu sistema.
+-clique com o botão direito na pasta e escolha a opção “Abrir no Terminal”
+-Execute o programa com o comando: 'python main.py'
 ```
 
 Sobre o arquivo 'grafo 1.txt':

@@ -87,6 +87,8 @@ executando o projeto
 Caso prefira rodar o código em Python:
 ```text
 É necessário ter o Python 3.10+ instalado em seu sistema.
+clique com o botão direito na pasta e escolha a opção “Abrir no Terminal”
+Execute o programa com o comando: 'python main.py'
 ```
 
 Sobre o arquivo 'grafo 1.txt':
@@ -98,7 +100,3 @@ O programa gera uma visualização da rede mostrando:
 - **Nós**: roteadores, switches e PCs.
 - **Arestas**: conexões entre eles.  
 - O grafo é desenhado automaticamente em uma janela interativa.
-
-
-## 8-📚 Referências
--

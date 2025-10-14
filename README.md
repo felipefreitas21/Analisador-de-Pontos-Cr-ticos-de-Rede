@@ -34,6 +34,7 @@ Analisador de Pontos Criticos
 
 
 ## 📄 Exemplo de Arquivo de Entrada (`grafo 1.txt`)
+```text
 ND
 S1 PC0
 S1 PC1
@@ -52,7 +53,7 @@ R0 R1
 R0 R2
 R0 R3
 R0 R4
-
+```
 A primeira linha indica o **tipo do grafo**:
 - ND → Não-dirigido    
 - As linhas seguintes representam as **arestas** (conexões entre os vértices).

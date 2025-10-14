@@ -74,7 +74,7 @@ O arquivo compactado enviado contém os seguintes itens:
 Para garantir o funcionamento correto do programa:
 
 6.1- Extraia todos os arquivos do .zip.
-
+<br>
 6.2- Coloque todos os arquivos na mesma pasta — isso fará que localize corretamente os arquivos .py e o arquivo de grafo (grafo 1.txt).
 executando o projeto
 🪟 Método 1 — Via executável (recomendado)

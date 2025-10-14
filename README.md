@@ -1,5 +1,7 @@
 # 🧠 Analisador de Pontos Críticos em Redes de Comunicação
-
+<p align="center">
+  <img src=<img width="1201" height="679" alt="image" src="https://github.com/user-attachments/assets/3a24a8e9-14e3-4283-9d7e-e9a612fad1a2" />
+</p>
 
 ## 👥 Integrantes
 - **ANTÔNIO FELIPE COSTA DE FREITAS**

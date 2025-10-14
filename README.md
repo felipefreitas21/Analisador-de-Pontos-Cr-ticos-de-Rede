@@ -26,12 +26,13 @@ O projeto utiliza uma **lista de adjacência** como estrutura de dados principal
 
 
 ## 🧩 Estrutura do Projeto
+```text
 Analisador de Pontos Criticos
 
 ─ grafo 1.txt   # Arquivo de entrada do grafo
 ─ grafo.py      # Implementação principal com lista de adjacência
 ─ README.md     # Este arquivo
-
+```
 
 ## 📄 Exemplo de Arquivo de Entrada (`grafo 1.txt`)
 ```text

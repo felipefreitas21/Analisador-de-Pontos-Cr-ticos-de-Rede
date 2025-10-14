@@ -77,6 +77,7 @@ Para garantir o funcionamento correto do programa:
 <br>
 6.2- Coloque todos os arquivos na mesma pasta — isso fará que localize corretamente os arquivos .py e o arquivo de grafo (grafo 1.txt).
 executando o projeto
+<br>
 🪟 Método 1 — Via executável (recomendado)
 ```text
 -Localize o arquivo main.exe.

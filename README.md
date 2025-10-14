@@ -1,7 +1,7 @@
 # 🧠 Analisador de Pontos Críticos em Redes de Comunicação
 ##
 <p align="center">
-  <img src=<img width="1201" height="679" alt="image" src="Rede_de_Comunicação.png" />
+  <img src=<img width="1201" height="679" alt="image" src="Rede_de_Comunicação.png"/>
 </p>
 
 ## 👥 Integrantes

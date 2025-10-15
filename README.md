@@ -11,7 +11,7 @@
 
 
 ## 2-📋 Descrição do Projeto
-Este projeto foi desenvolvido para a disciplina **ESTRUTURA DE DADOS AVANÇADA - UNIVERSIDADE ESTADUAL DO MARANHÃO**.  
+Este projeto foi desenvolvido para a disciplina **Estruturas de Dados Avançadas - UNIVERSIDADE ESTADUAL DO MARANHÃO**.  
 O objetivo é **analisar redes de comunicação** representadas por grafos não-dirigidos, permitindo verificar conexões entre roteadores e identificar **pontos críticos (vértices de articulação)** cuja falha pode desconectar partes da rede.
 
 O projeto utiliza uma **lista de adjacência** como estrutura de dados principal, oferecendo operações básicas de manipulação de grafos e **visualização gráfica** com a biblioteca `NetworkX`.
@@ -19,7 +19,7 @@ O projeto utiliza uma **lista de adjacência** como estrutura de dados principal
 
 ## 3-⚙️ Funcionalidades Implementadas
 - Leitura de um grafo a partir de um arquivo `.txt`
-- Construção de **lista de adjacência**
+- Construção de **lista de adjacência**,m
 - Impressão da estrutura do grafo
 - Verificação de **adjacência** entre dois vértices
 - Cálculo do **grau de um vértice**
@@ -68,15 +68,15 @@ A primeira linha indica o **tipo do grafo**:
 O arquivo compactado enviado contém os seguintes itens:
 -README.md → Este arquivo de instruções.
 -grafo 1.txt → Arquivo de entrada contendo o grafo a ser lido e processado.
--grafo.py → Codigo com todas as funções basicas e o algoritimo principal de identificação de pontos criticos de uma rede de comunicação
--main.py → Contem o menu principal e todas as chamadas das funções que estao no grafo.py
+-grafo.py → Código com todas as funções basicas e o algoritmo principal de identificação de pontos criticos de uma rede de comunicação.
+-main.py → Contem o menu principal e todas as chamadas das funções que estao no grafo.py.
 -main.exe → Versão executável do programa para Windows.
 
 Para garantir o funcionamento correto do programa:
 
 6.1- Extraia todos os arquivos do .zip.
 <br>
-6.2- Coloque todos os arquivos na mesma pasta — isso fará que localize corretamente os arquivos .py e o arquivo de grafo (grafo 1.txt).
+6.2- Coloque todos os arquivos na mesma pasta — isso fará com que localize corretamente os arquivos .py e o arquivo de grafo (grafo 1.txt).
 executando o projeto
 <br>
 🪟 Método 1 — Via executável (recomendado)
@@ -90,7 +90,7 @@ executando o projeto
 Caso prefira rodar o código em Python:
 ```text
 -É necessário ter o Python 3.10+ instalado em seu sistema.
--clique com o botão direito na pasta e escolha a opção “Abrir no Terminal”
+-Clique com o botão direito na pasta e escolha a opção “Abrir no Terminal”.
 -Execute o programa com o comando: 'python main.py'
 ```
 

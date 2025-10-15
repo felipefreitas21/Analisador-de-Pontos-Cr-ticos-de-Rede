@@ -12,8 +12,8 @@ grafo = gr.construir_grafo(arestas, dirigido)  #construção do grafo
 
 i = 1
 
-while i >= 1 and i <= 3: 
-    i = int(input("1. Funções Básicas \n2. Vizualizar Lista Adjacência \n3. Vizualizar Grafo\n4. Indentificar Pontos Críticos \n5. Vizualizar Remoção de ponto crítico\n"))
+while i >= 1 and i <= 4: 
+    i = int(input("1. Funções Básicas \n2. Vizualizar Lista Adjacência \n3. Vizualizar Grafo\n4. Indentificar Pontos Críticos \n"))
     if i == 1: 
         j = int(input("1. Listas Arestas \n2. Listar Vizinhos \n3. Calcula1r Grau \n4. Verificar Adjacências\n "))
         if j == 1:
@@ -47,13 +47,15 @@ while i >= 1 and i <= 3:
         print(f"Os pontos críticos são: {criticos}")
         gr.plotar_grafo_criticos(grafo, criticos)
 
-    if i == 5:
-        vertice = (input("Escolha os pontos críticos : S1, S2, S3, S4, S5, S6, S7, S8, R0, R1, R2, R3, R4\n")).upper()
-        if gr.remover_criticos(grafo, vertice) != False:
-            copia = gr.remover_criticos(grafo, vertice)
-            gr.imprimir_listadj(copia)
-            gr.plotar_grafo(copia, dirigido)
-        else:
-            print("Tente novamente. Informe um ponto crítico")
+        decisao = input("Deseja visualizar o grafo após a remoção de algum ponto crítico?[S/N]\n").upper()
+        if decisao == "S" or decisao == "SIM":
+            remocao = input(f"Esolha o ponto crítico que deseja remover {criticos}:\n").upper()
+            if gr.remover_criticos(grafo, remocao)!=False: 
+                copia = gr.remover_criticos(grafo, remocao)
+                gr.imprimir_listadj(copia)
+                gr.plotar_grafo(copia, dirigido)
+        
     
 
+        
+    

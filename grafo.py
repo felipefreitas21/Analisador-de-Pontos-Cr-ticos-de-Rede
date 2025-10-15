@@ -1,8 +1,8 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
-#função p/ ler o arquivi txt
-def ler_arquivivo(arquivo):
+#função p/ ler o arquivo txt
+def ler_arquivo(arquivo):
     with open(arquivo, "r", encoding="UTF-8") as arq:
         linhas = [linha.strip() for linha in arq if linha.strip()] #retorna uma lista com as linhas não vazias
 
@@ -29,6 +29,23 @@ def construir_grafo(arestas, dirigido=False, evitar_duplicatas=True): #por padr�
                 grafo.setdefault(v, list()).append(u)
         return grafo
     
+
+#Função para remover pontos críticos
+def remover_criticos(grafo, vertice):
+    if vertice in grafo:
+        copia = grafo.copy() #criando uma cópia
+        copia.pop(vertice)
+        #remover dos vizinhos 
+        for x, vizinhos in copia.items():
+            for y in vizinhos:
+                if y == vertice:
+                    vizinhos.remove(y)
+        
+        return copia
+    else:
+        return False
+
+
 #função para imprimir a lista de adjacência
 def imprimir_listadj(grafo):
     print("Lista de Adjacência")
@@ -38,6 +55,47 @@ def imprimir_listadj(grafo):
 
 
 #Função p/ indentificar os pontos críticos do grafo 
+def indentificar_criticos(grafo):
+    tempo = 0 #contador global de tempo (ordem de descoberta)
+    visitado = {v: False for v in grafo}
+    disc = {v: float('inf') for v in grafo}
+    pai = {v: None for v in grafo}
+    lower = {v: float('inf') for v in grafo}
+    articulacoes = set()
+
+    def dfs(u):
+        nonlocal tempo
+        visitado[u] = True
+        disc[u] = lower[u] = tempo
+        tempo += 1
+        filhos = 0
+
+
+        for v in grafo[u]:
+            if not visitado[v]:
+                pai[v] = u
+                filhos += 1
+                dfs(v) #recursão
+
+                #atualizando o valor low de u
+                lower[u] = min(lower[u], lower[v])
+
+                #(1) u é raíz da DFS e tem mais de 1 filhos -> ponto crítico
+                if pai [u] is None and filhos > 1:
+                    articulacoes.add(u)
+
+                #(2) u não é raíz, e low[v] >= disc[u] -> ponto crítico
+                if pai[u] is not None and lower[v] >= disc[u]:
+                    articulacoes.add(u)
+            elif v != pai[u]:
+                #Atualiza low[u] se encontrou uma aresta de retorno
+                low = min(lower[u], disc[v])
+    for vertice in grafo: 
+        if not visitado[vertice]:
+            dfs(vertice) #recursão
+    
+    return sorted(list(articulacoes))
+
 
 #função para plotar o grafo
 def plotar_grafo(grafo, dirigido=False): #assume que o valor padrão de dirigido é false, ou seja que estamos trabalhando com um grafo não dirigido
@@ -58,6 +116,32 @@ def plotar_grafo(grafo, dirigido=False): #assume que o valor padrão de dirigido
     )
 
     print("Gerando Grafo...")
+
+    plt.show()
+
+#função para plotar grafo listando os pontos críticos
+def plotar_grafo_criticos(grafo, criticos, dirigido=False):
+    G = nx.DiGraph() if dirigido else nx.Graph() #se o dirifido for verdadeiro então cria um grafo dirigido, se não cria um grafo não dirigido
+    #adicionando as arestas
+    for u, adjacentes in grafo.items():
+        for v in adjacentes: 
+            G.add_edges_from([(u, v)])
+
+    cores = []
+    for n in G.nodes():
+        if criticos and n in criticos:
+            cores.append("red")
+        else:
+            cores.append("lightblue")
+    
+    nx.draw(
+        G,                          #grafo em questão
+        with_labels = True,
+        font_size = 10,             #fonte
+        node_color = cores ,        #cor do vértice
+        edge_color = "gray",        #cor da aresta
+        node_size = 600             #tamanho do vértice
+    )
 
     plt.show()
 
@@ -94,7 +178,7 @@ def ver_adj(grafo, vertice1, vertice2):
 if __name__ == "__main__":
     arquivo = "grafo 1.txt"
 
-    tipo, arestas = ler_arquivivo(arquivo)
+    tipo, arestas = ler_arquivo(arquivo)
 
     if(tipo == "D"):
         dirigido = True
@@ -127,9 +211,6 @@ if __name__ == "__main__":
             print("Não são adjacentes")
     else:
         print("Informe vértices que existam no grafo.")
-
-
-
 
 
     plotar_grafo(grafo, dirigido)

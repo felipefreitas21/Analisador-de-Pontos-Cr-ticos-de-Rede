@@ -27,6 +27,7 @@ O projeto utiliza uma **lista de adjacência** como estrutura de dados principal
 - Exibição de **todas as arestas**
 - **Plotagem visual** do grafo com `NetworkX` e `Matplotlib`
 
+💡 Observação: Optou-se por modelar a rede como um grafo não dirigido, uma vez que o interesse está na conectividade geral da rede e não no sentido do tráfego. Dessa forma, foi aplicado o algoritmo de Tarjan, que utiliza a Busca em Profundidade (DFS), para identificação de vértices de articulação (pontos críticos).
 
 ## 4-🧩 Estrutura do Projeto
 ```text

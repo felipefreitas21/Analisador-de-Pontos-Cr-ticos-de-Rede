@@ -19,7 +19,7 @@ O projeto utiliza uma **lista de adjacência** como estrutura de dados principal
 
 ## 3-⚙️ Funcionalidades Implementadas
 - Leitura de um grafo a partir de um arquivo `.txt`
-- Construção de **lista de adjacência**,m
+- Construção de **lista de adjacência**
 - Impressão da estrutura do grafo
 - Verificação de **adjacência** entre dois vértices
 - Cálculo do **grau de um vértice**

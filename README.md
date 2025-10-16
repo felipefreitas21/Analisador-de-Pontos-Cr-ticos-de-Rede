@@ -1,7 +1,7 @@
 # 🧠 Analisador de Pontos Críticos em Redes de Comunicação
 ##
 <p align="center">
-  <img width="900" height="500" alt="image" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fcisco-packet-tracer-tutorial-brianna-laird&psig=AOvVaw3ZF9ZC1jq13Gb0nXHnDJHC&ust=1760659926209000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPje6MG3p5ADFQAAAAAdAAAAABAL"/>
+  <img width="900" height="500" alt="image" src="https://media.licdn.com/dms/image/v2/D5612AQETHx1UCkx66A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1691981770897?e=2147483647&v=beta&t=0O7TBpNSUgM07-CcPeXtZDrWnO-Hpi4leJ4VQl-A3k8"/>
 </p>
 
 ## 1-👥 Integrantes

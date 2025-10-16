@@ -14,7 +14,7 @@
 Este projeto foi desenvolvido para a disciplina **Estruturas de Dados Avançadas - UNIVERSIDADE ESTADUAL DO MARANHÃO**.  
 O objetivo é **analisar redes de comunicação** representadas por grafos não-dirigidos, permitindo verificar conexões entre roteadores e identificar **pontos críticos (vértices de articulação)** cuja falha pode desconectar partes da rede.
 
-O projeto utiliza uma **lista de adjacência** como estrutura de dados principal, oferecendo operações básicas de manipulação de grafos e **visualização gráfica** com a biblioteca `NetworkX` e `Matplotlib`.
+O projeto utiliza uma **lista de adjacência** como estrutura de dados principal, oferecendo operações básicas de manipulação de grafos e **visualização gráfica** com as bibliotecas `NetworkX` e `Matplotlib`.
 
 
 ## 3-⚙️ Funcionalidades Implementadas
